@@ -1,0 +1,28 @@
+.auth_page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: 480px;
+}
+.info_panel {
+    background: #fff;
+    width: 400px;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.panels {
+    display: flex;
+    gap: 25px;
+}
+@media screen and (max-width: 930px){
+    .auth_page {
+        align-items: flex-start;
+    }
+    .panels {
+        flex-direction: column;
+        align-items: center;
+    }
+}
