@@ -15,10 +15,9 @@ const Navbar = () => {
         <div className={classes.header_btns}>
           <div className={classes.header_divs} onClick={() => setShowNotifications(!showNotifications)}>
             <FaBell className={classes.header_icon} />
+            <div className={classes.have_notification}></div>
           </div>
-          <div className={classes.header_divs}>
-            <FaClock className={classes.header_icon} />
-          </div>
+
           <div className={classes.header_divs}>
             <AiFillSetting className={classes.header_icon} />
           </div>

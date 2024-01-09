@@ -6,6 +6,7 @@
     cursor: pointer;
     display: grid;
     place-items: center;
+    position: relative;
 }
 .header_btns {
     display: flex;
@@ -51,4 +52,13 @@ header {
     to {
         transform: scale(1);
     }
+}
+.have_notification {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 75%;
+    top: 75%;
+    background: orange;
 }
