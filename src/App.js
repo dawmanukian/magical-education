@@ -11,7 +11,7 @@ function App() {
     return (
       <Router>
         <Routes>
-          <Route path={"/"} element={<DashboardPage />} />
+          <Route path={"/"} element={<DashboardPage onExit={() => setAuthUser(false)}/>} />
         </Routes>
       </Router>
     );
@@ -20,7 +20,6 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Navbar />
           <Route path="/" element={<AuthPage />} />
         </Routes>
       </Router>

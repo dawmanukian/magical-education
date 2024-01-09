@@ -5,7 +5,7 @@ import { AiFillSetting } from "react-icons/ai";
 import { FaClock } from "react-icons/fa6";
 import { FaFaceSmileBeam } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({onExit}) => {
   const [showNotifications, setShowNotifications] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className={classes.have_notification}></div>
           </div>
 
-          <div className={classes.header_divs}>
+          <div className={classes.header_divs} onClick={() => onExit()}>
             <AiFillSetting className={classes.header_icon} />
           </div>
         </div>

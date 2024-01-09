@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 
-const DashboardPage = () => {
+const DashboardPage = ({onExit}) => {
   return (
     <div style={{width: '100%', position:'relative'}}>
-      <Navbar />
+      <Navbar onExit={onExit}/>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam sequi illo, repellendus necessitatibus laudantium odit, omnis nihil tenetur voluptatem, corporis accusantium! Id atque est distinctio mollitia architecto neque natus.
       Debitis velit repellendus incidunt assumenda recusandae nesciunt numquam voluptatem et, quisquam nulla ab. Maiores quidem amet accusantium perspiciatis corrupti, odio id ratione, laboriosam voluptas voluptatum facilis necessitatibus doloribus labore cumque.
       Quis alias quos velit temporibus voluptas ducimus veniam nobis aut maxime, dolores asperiores nesciunt doloremque enim molestias voluptates nam dolorem magnam explicabo aliquid aperiam laudantium non pariatur. Tempora, cupiditate debitis!
