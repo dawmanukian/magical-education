@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  const [authUser, setAuthUser] = useState(true);
+  const [authUser, setAuthUser] = useState(false);
 
   if (authUser) {
     return (
