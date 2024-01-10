@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route
               path={"/"}
-              element={<DashboardPage onExit={() => setAuthUser(false)} />}
+              element={<DashboardPage />}
             />
           </Routes>
         </Router>
@@ -27,7 +27,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<AuthPage />} />
+          <Route path="/" element={<AuthPage onSubmit={() => setAuthUser(true)}/>} />
         </Routes>
       </Router>
     </>

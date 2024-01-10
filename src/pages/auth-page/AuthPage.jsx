@@ -2,7 +2,7 @@ import React from "react";
 import SignInForm from "../../components/signin-form/SignInForm";
 import classes from "./auth-page.module.css";
 
-const AuthPage = () => {
+const AuthPage = ({onSubmit}) => {
   return (
     <div className={classes.auth_page}>
       <div className={classes.panels}>
@@ -11,7 +11,7 @@ const AuthPage = () => {
           <p>The Platform for Magical Company's Students</p>
           <p>Platform for studying, discovering and creating.</p>
         </div>
-        <SignInForm />
+        <SignInForm onSubmit={onSubmit}/>
       </div>
     </div>
   );
