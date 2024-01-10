@@ -18,9 +18,19 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    gap: 22px;
     align-items: center;
     font-weight: bold;
     font-size: 14px;
+}
+.num_div {
+    display: grid;
+    place-items: center;
+    background: #EBEDF0FF;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #75787CFF;
 }
 .tasks_panel {
     width: 100%;
@@ -33,9 +43,21 @@
 }
 .line_div {
     height: 40px;
-    background: red;
     position: absolute;
     left: 0px;
     border-radius: 0px 5px 5px 0px;
     width: 10px;
+}
+.task {
+    min-width: 250px;
+    height: 150px;
+    background: #fff;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 610px){
+    .tasks_div {
+        min-width: 100%;
+    }
 }
