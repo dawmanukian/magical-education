@@ -9,11 +9,17 @@ function App() {
 
   if (authUser) {
     return (
-      <Router>
-        <Routes>
-          <Route path={"/"} element={<DashboardPage onExit={() => setAuthUser(false)}/>} />
-        </Routes>
-      </Router>
+      <>
+        <Navbar />
+        <Router>
+          <Routes>
+            <Route
+              path={"/"}
+              element={<DashboardPage onExit={() => setAuthUser(false)} />}
+            />
+          </Routes>
+        </Router>
+      </>
     );
   }
   return (
