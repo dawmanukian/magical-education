@@ -1,8 +1,7 @@
 .user_panel {
-    padding: 20px 0px 05px 0px;
-    width: 300px;
+    padding: 20px 0px 20px 0px;
+    min-width: 300px;
     background: #fff;
-    margin-top: 25px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -27,6 +26,6 @@
 
 @media screen and (max-width: 991px){
     .user_panel {
-        width: 100%;
+        min-width: 100%;
     }
 }

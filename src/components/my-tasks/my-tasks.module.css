@@ -1,0 +1,41 @@
+.my_tasks {
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tasks_div {
+    cursor: pointer;
+    position: relative;
+    height: 70px;
+    min-width: 250px;
+    background: #fff;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tasks_panel {
+    width: 100%;
+    max-width: 991px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+    
+}
+.line_div {
+    height: 40px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    width: 10px;
+}
