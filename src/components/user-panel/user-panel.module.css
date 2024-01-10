@@ -29,7 +29,6 @@
     display: flex;
     justify-content: center;
     height: 140px;
-    background: orange;
     border-radius: 15px 15px 0px 0px;
 }
 .background_color img {
