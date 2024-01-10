@@ -6,7 +6,7 @@ import classes from "./dashboard-page.module.css";
 
 const DashboardPage = ({ onExit }) => {
   return (
-    <div style={{ width: "100%", display: "flex" }}>
+    <div style={{ width: "100%", display: "flex", justifyContent: 'center' }}>
       <div className={classes.page_data}>
         <UserPanel />
         <MyTasks />

@@ -1,8 +1,9 @@
 .page_data {
-    width: 100%;
+    max-width: 991px;
     padding: 0px 30px 0px 30px;
     margin-top: 25px;
     display: flex;
+    flex-direction: column;
     gap: 25px;
 }
 @media screen and (max-width: 991px){

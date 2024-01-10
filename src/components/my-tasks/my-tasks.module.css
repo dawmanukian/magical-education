@@ -11,7 +11,8 @@
     cursor: pointer;
     position: relative;
     height: 70px;
-    min-width: 250px;
+    width: 100%;
+    max-width: 500px;
     background: #fff;
     color: #333;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -36,7 +37,7 @@
     width: 100%;
     max-width: 991px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 25px;
@@ -48,6 +49,10 @@
     left: 0px;
     border-radius: 0px 5px 5px 0px;
     width: 10px;
+    transition: all ease .4s;
+}
+.tasks_div:hover .line_div{
+    width: 30px;
 }
 .task {
     min-width: 250px;
