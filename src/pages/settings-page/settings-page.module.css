@@ -6,22 +6,25 @@
 }
 .settings_panel {
     margin-top: 25px;
-    height: 400px;
     width: 100%;
-    max-width: 881px;
+    max-width: 781px;
+    min-height: 400px;
     background: #fff;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .inpt_panel {
     display: flex;
-    gap: 15px;
+    gap: 13px;
 }
-.inpt {
+textarea {
     border: none;
     border-radius: 7px;
-    background: #EBEDF0FF;
-    height: 100px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #DDDFE2FF;
+    height: 50px;
+    width: 250px;
 }
 .user_img {
     border-radius: 50%;
@@ -35,6 +38,8 @@
     position: relative;
     border-radius: 15px 15px 0px 0px;
     height: 150px;
+    transition: all ease .5s;
+    background: linear-gradient(to right, #1a2980, #26d0ce);
 }
 .select_img {
     height: 40px;
@@ -50,4 +55,39 @@
     position: absolute;
     top: 160px;
     left: 120px;
+}
+.bg_div {
+    height: 230px;
+}
+.inpt_panel span {
+    color: #6A7997FF;
+    font-weight: bold;
+}
+.settings_data {
+    display: flex;
+    justify-content: center;
+}
+.change_btn {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+    background: #fff;
+    position: absolute;
+    right: 0px;
+    margin: 15px;
+}
+.bg_color_div {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all ease .3s;
+}
+.bg_color_div:hover {
+    transform: scale(1.1);
+}
+.select_div {
+    display: flex;
+    gap: 10px;
 }
