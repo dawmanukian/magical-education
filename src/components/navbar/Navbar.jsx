@@ -8,9 +8,13 @@ import { FaDatabase } from "react-icons/fa6";
 import { BsCloudFill } from "react-icons/bs";
 import { BsFileEarmarkCodeFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
+import { FaMoon } from "react-icons/fa";
+import Themes from "../themes/Themes";
+import { FaPalette } from "react-icons/fa6";
 
 const Navbar = ({ onExit }) => {
   const [showNotifications, setShowNotifications] = useState(false);
+  const [showThemeSwitcher, setShowThemeSwitcher] = useState(false);
 
   return (
     <>
@@ -25,12 +29,24 @@ const Navbar = ({ onExit }) => {
           </div> */}
           <div
             className={classes.header_divs}
-            onClick={() => setShowNotifications(!showNotifications)}
+            onClick={() => {
+              setShowThemeSwitcher(false);
+              setShowNotifications(!showNotifications);
+            }}
           >
             <FaBell className={classes.header_icon} />
             <div className={classes.have_notification}></div>
           </div>
-          <div className={classes.header_divs} onClick={() => onExit()}>
+          <div
+            className={classes.header_divs}
+            onClick={() => {
+              setShowNotifications(false);
+              setShowThemeSwitcher(!showThemeSwitcher);
+            }}
+          >
+            <FaPalette className={classes.header_icon} />
+          </div>
+          <div className={classes.header_divs}>
             <AiFillSetting
               className={classes.header_icon}
               style={{ fontSize: "23px" }}
@@ -44,8 +60,15 @@ const Navbar = ({ onExit }) => {
             <div
               style={{ display: "grid", placeItems: "center", height: "100%" }}
             >
-              <p>You have nothing new !</p>
+              <p>Notifications</p>
             </div>
+          </div>
+        </div>
+      )}
+      {showThemeSwitcher && (
+        <div className={classes.not_panel}>
+          <div className={classes.notifications}>
+            <Themes />
           </div>
         </div>
       )}

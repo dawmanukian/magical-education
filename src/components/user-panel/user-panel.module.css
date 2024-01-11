@@ -30,6 +30,7 @@
     justify-content: center;
     height: 140px;
     border-radius: 15px 15px 0px 0px;
+    background: orange;
 }
 .background_color img {
     border: 5px solid #fff;
