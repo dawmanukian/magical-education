@@ -89,5 +89,41 @@ textarea {
 }
 .select_div {
     display: flex;
+    position: absolute;
+    top: 60px;
+    right: 10px;
     gap: 10px;
+    background: #fff;
+    padding: 7px;
+    border-radius: 10px;
+    z-index: 5;
+    animation: select_div_anim 0.5s;
+}
+@keyframes select_div_anim {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+span {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.open_panel {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: gray;
+    cursor: pointer;
 }
