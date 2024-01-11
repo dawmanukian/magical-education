@@ -1,0 +1,53 @@
+.page_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.settings_panel {
+    margin-top: 25px;
+    height: 400px;
+    width: 100%;
+    max-width: 881px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.inpt_panel {
+    display: flex;
+    gap: 15px;
+}
+.inpt {
+    border: none;
+    border-radius: 7px;
+    background: #EBEDF0FF;
+    height: 100px;
+}
+.user_img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+}
+.bg_color {
+    width: 100%;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    height: 150px;
+}
+.select_img {
+    height: 40px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 18px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #75787CFF;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}

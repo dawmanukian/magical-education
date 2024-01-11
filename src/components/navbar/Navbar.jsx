@@ -10,6 +10,7 @@ import { BsFileEarmarkCodeFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 import Themes from "../themes/Themes";
+import { Link } from "react-router-dom";
 import { FaPalette } from "react-icons/fa6";
 
 const Navbar = ({ onExit }) => {
@@ -19,7 +20,9 @@ const Navbar = ({ onExit }) => {
   return (
     <>
       <header>
-        <p className={classes.header_name}>Magical Education</p>
+        <Link to={"/"} className={classes.header_name}>
+          <p className={classes.header_name}>Magical Education</p>
+        </Link>
         <div className={classes.header_btns}>
           {/* <div className={classes.header_divs} style={{opacity: '50%', cursor: 'default' }}>
             <AiFillMessage  
@@ -46,12 +49,14 @@ const Navbar = ({ onExit }) => {
           >
             <FaPalette className={classes.header_icon} />
           </div>
-          <div className={classes.header_divs}>
-            <AiFillSetting
-              className={classes.header_icon}
-              style={{ fontSize: "23px" }}
-            />
-          </div>
+          <Link to={"./settings"}>
+            <div className={classes.header_divs}>
+              <AiFillSetting
+                className={classes.header_icon}
+                style={{ fontSize: "23px" }}
+              />
+            </div>
+          </Link>
         </div>
       </header>
       {showNotifications && (

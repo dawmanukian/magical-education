@@ -4,6 +4,7 @@ import DashboardPage from "./pages/dashboard-page/DashboardPage";
 import { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import SettingsPage from "./pages/settings-page/SettingsPage";
 
 function App() {
   const [authUser, setAuthUser] = useState(true);
@@ -11,13 +12,11 @@ function App() {
   if (authUser) {
     return (
       <>
-        <Navbar />
         <Router>
+        <Navbar />
           <Routes>
-            <Route
-              path={"/"}
-              element={<DashboardPage />}
-            />
+            <Route path={"/*"} element={<DashboardPage />} />
+            <Route path={"/settings"} element={<SettingsPage />} />
           </Routes>
         </Router>
       </>
@@ -27,7 +26,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<AuthPage onSubmit={() => setAuthUser(true)}/>} />
+          <Route
+            path="/*"
+            element={<AuthPage onSubmit={() => setAuthUser(true)} />}
+          />
         </Routes>
       </Router>
     </>

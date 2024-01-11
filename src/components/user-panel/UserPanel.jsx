@@ -17,7 +17,7 @@ const UserPanel = () => {
         <div>
           <p className={classes.user_name}>Davit Manukyan</p>
           <p className={classes.user_email}>thedavitmanukyan@gmail.com</p>
-          <p className={classes.user_status}>Student</p>
+          <p className={classes.user_bio}>What's on your mind ?</p>
         </div>
       </div>
     </div>

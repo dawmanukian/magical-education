@@ -25,6 +25,7 @@ header {
 .header_name {
     color: #6A7997FF;
     font-weight: bold;
+    text-decoration: none;
 }
 .header_icon {
     font-size: 20px;
